@@ -24,13 +24,13 @@
         )
         @inputText(
             signupForm("email"),
-            'placeholder -> Messages("email"),
+            'placeholder -> Messages("Email *"),
             '_label -> null,
             '_showConstraints -> false,
             'class -> "form-control"
         )
         @inputText(
-            signupForm("username"),
+            signupForm("fullname"),
             'placeholder -> Messages("Username *"),
             '_label -> null,
             '_showConstraints -> false,
@@ -43,14 +43,14 @@
             'placeholder -> Messages("Password *"),
             'class -> "form-control"
         )
-        @inputPassword(
+        @inputText(
             signupForm("address"),
             '_label -> null,
             '_showConstraints -> false,
             'placeholder -> Messages("Address *"),
             'class -> "form-control"
         )
-        @inputPassword(
+        @inputText(
             signupForm("city"),
             '_label -> null,
             '_showConstraints -> false,

@@ -30,7 +30,18 @@ public class User extends Model {
     @Constraints.Required
     @Formats.NonEmpty
     @Column(unique = true)
+    public String name;
+
+    @Constraints.Required
+    @Formats.NonEmpty
+    @Column(unique = true)
+    public String surname;
+
+    @Constraints.Required
+    @Formats.NonEmpty
+    @Column(unique = true)
     public String fullname;
+
 
     @Constraints.Required
     @Formats.NonEmpty
