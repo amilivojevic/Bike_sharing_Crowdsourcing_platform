@@ -6,15 +6,50 @@
 
 @main(null, scripts) {
 
+    <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">Share and rent a Bikee with someone you like!</div>
+        <div class="intro-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <div id="imaginary_container">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Search</span>
+                    <input type="text" class="form-control" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#services" class="page-scroll btn btn-xl">Search</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="login">
+    <div class="container text-center">
+    </br></br>
+      <h2 class="section-heading2">Log In</h2>
+      <h3 class="section-subheading text-muted">Welcome to Bikee!</h3>
+      <div class="col-md-6 col-sm-offset-3">
+
+    @login(loginForm)
+    </div>
+      </div>
+
+  </section>
+
   @wflash()
   <div class="col-lg-6">
       Sed (saepe enim redeo ad Scipionem, cuius omnis sermo erat de amicitia) querebatur, quod omnibus in rebus homines diligentiores essent; capras et oves quot quisque haberet, dicere posse, amicos quot haberet, non posse dicere et in illis quidem parandis adhibere curam, in amicis eligendis neglegentis esse nec habere quasi signa quaedam et notas, quibus eos qui ad amicitias essent idonei, iudicarent. Sunt igitur firmi et stabiles et constantes eligendi; cuius generis est magna penuria. Et iudicare difficile est sane nisi expertum; experiendum autem est in ipsa amicitia. Ita praecurrit amicitia iudicium tollitque experiendi potestatem.
   </div>
 
   <div class="col-lg-6">
-    <div class="well">
-      @login(loginForm)
-    </div>
+
 
     <div class="well">
       @views.html.account.signup.createFormOnly(signupForm)

@@ -27,9 +27,9 @@ error.expiredmaillink=This mail change has expired.
 account.settings.password=Click OK to receive instructions by mail.
 account.settings.email=Enter your new email address. Click OK to receive instructions on this new mail.
 
-signin.signin=Sign In
-signin.your.email=Your email address
-signin.your.password=Your password
+signin.signin=Submit
+signin.your.email=Enter your email address
+signin.your.password=Enter your password
 
 forgot.password=Forgot password ?
 
