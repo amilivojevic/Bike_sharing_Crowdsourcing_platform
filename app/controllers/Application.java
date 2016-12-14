@@ -86,13 +86,22 @@ public class Application extends Controller {
     public static class Register {
 
         @Constraints.Required
+        public String name;
+
+        @Constraints.Required
+        public String surname;
+
+        @Constraints.Required
         public String email;
 
         @Constraints.Required
-        public String fullname;
+        public String password;
 
         @Constraints.Required
-        public String inputPassword;
+        public String address;
+
+        @Constraints.Required
+        public String city;
 
         /**
          * Validate the authentication.
@@ -104,11 +113,11 @@ public class Application extends Controller {
                 return "Email is required";
             }
 
-            if (isBlank(fullname)) {
+            if (isBlank(surname)) {
                 return "Full name is required";
             }
 
-            if (isBlank(inputPassword)) {
+            if (isBlank(password)) {
                 return "Password is required";
             }
 

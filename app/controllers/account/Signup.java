@@ -77,8 +77,10 @@ public class Signup extends Controller {
         try {
             User user = new User();
             user.email = register.email;
-            user.fullname = register.fullname;
-            user.passwordHash = Hash.createPassword(register.inputPassword);
+            user.surname = register.surname;
+            user.name = register.name;
+            user.address = user.address;
+            user.passwordHash = Hash.createPassword(register.password);
             user.confirmationToken = UUID.randomUUID().toString();
 
             user.save();
