@@ -22,7 +22,7 @@
             '_showConstraints -> false,
             'class -> "form-control"
         )
-        <p class="help-block text-danger"></p>
+
         @inputPassword(
             loginForm("password"),
             '_label -> null,
@@ -31,12 +31,12 @@
             '_showConstraints -> false,
             'class -> "form-control"
         )
-        <p class="help-block text-danger"></p>
+
     </fieldset>
 
     <div class="form-actions">
         <input type="submit" class="btn btn-xl" value="@Messages("signin.signin")">
-        
+
         <h4><a href="@controllers.account.routes.Reset.ask">@Messages("forgot.password")</a> </h4>
 
 
