@@ -1,5 +1,7 @@
+
 .user-row {
     margin-bottom: 14px;
+
 }
 
 .user-row:last-child {
@@ -17,7 +19,8 @@
 }
 
 .table-user-information > tbody > tr {
-    border-top: 1px solid rgb(221, 221, 221);
+  border-top: 1px solid rgba(171, 206, 191, 0.37);
+
 }
 
 .table-user-information > tbody > tr:first-child {
@@ -35,7 +38,18 @@
 .user_name{
     font-size:14px;
     font-weight: bold;
+    color: #888888;
+
 }
 .comments-list .media{
     border-bottom: 1px dotted #ccc;
+    color: white;
+}
+
+h1.colore{
+    color: #fed136;
+}
+
+h4.colore2{
+    color: #989898;
 }

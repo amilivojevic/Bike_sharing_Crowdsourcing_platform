@@ -1,21 +1,22 @@
 @(user: User)
 
 @main(user) {
-
-
+    <body>
     <div class="container">
+
         <div class="row">
 
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12  toppad" >
+            <br><br><br><br><br>
 
+            <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8  toppad" >
 
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title">User: #@user.id</h3>
+                        <h4 class="colore2" ALIGN="LEFT">Welcome @user.name @user.surname !</h4>
                     </div>
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+                            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="@routes.Assets.at("images/nikola.jpg")" class="img-circle img-responsive"> </div>
 
 
                             <div class=" col-md-9 col-lg-9 ">
@@ -73,7 +74,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="page-header">
-                    <h1><small class="pull-right">45 comments</small> Comments </h1>
+                    <h1 class="colore"><small class="pull-right">3 comments</small> Comments </h1>
                 </div>
 
                 <div class="comments-list">
@@ -101,33 +102,33 @@
                         </a>
                         <div class="media-body">
 
-                            <h4 class="media-heading user_name">Baltej Singh</h4>
-                            Wow! this is really great.
+                            <h4 class="media-heading user_name">Ana Marojevic</h4>
+                            Nikola is really good guy. I had no problems with him.
 
                             <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
                         </div>
                     </div>
                     <div class="media">
-                        <p class="pull-right"><small>5 days ago</small></p>
+                        <p class="pull-right"><small>3 months ago</small></p>
                         <a class="media-left" href="#">
                             <img src="http://lorempixel.com/40/40/people/3/">
                         </a>
                         <div class="media-body">
 
-                            <h4 class="media-heading user_name">Baltej Singh</h4>
-                            Wow! this is really great.
+                            <h4 class="media-heading user_name">Maja Miljic</h4>
+                            For every recomendation!
 
                             <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
                         </div>
                     </div>
                     <div class="media">
-                        <p class="pull-right"><small>5 days ago</small></p>
+                        <p class="pull-right"><small>1 year ago</small></p>
                         <a class="media-left" href="#">
                             <img src="http://lorempixel.com/40/40/people/4/">
                         </a>
                         <div class="media-body">
 
-                            <h4 class="media-heading user_name">Baltej Singh</h4>
+                            <h4 class="media-heading user_name">Nikola Lukic</h4>
                             Wow! this is really great.
 
                             <p><small><a href="">Like</a> - <a href="">Share</a></small></p>
@@ -139,6 +140,9 @@
 
             </div>
         </div>
+
     </div>
+    </body>
+
 
 }
