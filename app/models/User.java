@@ -51,7 +51,7 @@ public class User extends Model {
     @Constraints.Required
     @Formats.NonEmpty
     @Column(unique = true)
-    public City city;
+    public String city;
 
     @Constraints.Required
     @Formats.NonEmpty
