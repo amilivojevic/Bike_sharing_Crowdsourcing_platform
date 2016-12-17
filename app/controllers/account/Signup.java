@@ -1,6 +1,7 @@
 package controllers.account;
 
 import controllers.Application;
+import models.City;
 import models.User;
 import models.utils.AppException;
 import models.utils.Hash;
@@ -79,7 +80,10 @@ public class Signup extends Controller {
             user.email = register.email;
             user.surname = register.surname;
             user.name = register.name;
-            user.address = user.address;
+            user.address = register.address;
+            user.city = new City();
+            user.city.setName(register.city);
+            user.address = register.address;
             user.passwordHash = Hash.createPassword(register.password);
             user.confirmationToken = UUID.randomUUID().toString();
 

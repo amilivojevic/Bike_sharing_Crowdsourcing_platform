@@ -37,5 +37,35 @@ public class City  extends Model {
     @Column
     public Country country;
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getZip_code() {
+        return zip_code;
+    }
+
+    public void setZip_code(String zip_code) {
+        this.zip_code = zip_code;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
+    }
 }
