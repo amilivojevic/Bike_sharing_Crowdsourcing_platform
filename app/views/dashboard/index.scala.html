@@ -48,7 +48,7 @@
                                 </table>
 
                                     @if(!user.renter) {
-                                        <a href="#"  >  &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbspWant to become renter? Click here!</a>
+                                        <p>  &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp<a id="upgrade-btn" href="#"  data-toggle="modal" data-target="#upgradeModal">Want to become renter? Click here!</a></p>
 
                                     }
 
@@ -66,6 +66,119 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+
+            <!-- Modal -->
+    <div id="upgradeModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+
+                <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Step1: Confirm upgrading profile in owner</h4>
+                </div>
+                <div class="modal-body">
+                    <p>We are honored that you want to join our BIKE OWNER Team! Fee for upgrading is 10$ per year. Enjoy sharing your bike with others. :)</p>
+                </div>
+                <hr>
+                Payment methods:
+                <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#creditcardModal"><img  src="@routes.Assets.at("images/creditcard.png")"></a>
+                <a href="https://www.paypal.com/cgi-bin/webscr" claa="pull-right"><img src="@routes.Assets.at("images/paypal.jpg")" href="#"></a>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- Modal2 -->
+    <div id="creditcardModal" class="modal fade" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+
+                <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">Step 2: Confirm upgrading profile in owner</h4>
+                </div>
+
+
+                <div class="panel-body">
+                    <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label for="cardNumber">CARD NUMBER</label>
+                                    <div class="input-group">
+                                        <input
+                                        type="tel"
+                                        class="form-control"
+                                        name="cardNumber"
+                                        placeholder="Valid Card Number"
+                                        autocomplete="cc-number"
+                                        required autofocus
+                                        />
+                                        <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-7 col-md-7">
+                                <div class="form-group">
+                                    <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                    <input
+                                    type="tel"
+                                    class="form-control"
+                                    name="cardExpiry"
+                                    placeholder="MM / YY"
+                                    autocomplete="cc-exp"
+                                    required
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-xs-5 col-md-5 pull-right">
+                                <div class="form-group">
+                                    <label for="cardCVC">CV CODE</label>
+                                    <input
+                                    type="tel"
+                                    class="form-control"
+                                    name="cardCVC"
+                                    placeholder="CVC"
+                                    autocomplete="cc-csc"
+                                    required
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="subscribe btn btn-primary btn-block" >
+                                    PAY
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="subscribe btn btn-primary btn-block" type="button">Total:<span class='amount'>$10</span></button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
     </div>
 
 
