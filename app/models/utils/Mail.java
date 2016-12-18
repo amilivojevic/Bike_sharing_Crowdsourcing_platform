@@ -86,6 +86,7 @@ public class Mail {
         }
 
         public void run() {
+
             Email email = new Email();
 
             final Configuration root = Configuration.root();
@@ -107,6 +108,9 @@ public class Mail {
                     + " SSL:" + root.getString("smtp.ssl")
                     + " user:" + root.getString("smtp.user")
                     + " password:" + root.getString("smtp.password"));
+
+
         }
     }
 }
+
